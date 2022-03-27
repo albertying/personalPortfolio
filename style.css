@@ -5,6 +5,12 @@ canvas {
   background-color: rgb(18, 19, 20);
 }
 
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 header {
   margin-top: 35rem;
   margin-bottom: 30rem;
