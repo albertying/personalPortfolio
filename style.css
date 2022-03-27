@@ -5,12 +5,17 @@ canvas {
   background-color: rgb(18, 19, 20);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1536px) {
   html {
     font-size: 12px;
   }
 }
 
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 9px;
+  }
+}
 header {
   margin-top: 35rem;
   margin-bottom: 30rem;
@@ -60,7 +65,7 @@ nav div {
 }
 
 nav div a {
-  font-size: 1.25rem;
+  font-size: 20px;
   text-decoration: none;
   font-family: Montserrat;
   color: gray;
