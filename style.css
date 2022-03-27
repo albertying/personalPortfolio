@@ -2,17 +2,23 @@ canvas {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgb(18, 19, 22);
+  background-color: rgb(18, 19, 20);
 }
 
 header {
-  margin-left: 150px;
-  margin-top: 600px;
+  margin-top: 35rem;
+  margin-bottom: 30rem;
   font-family: Montserrat;
+  grid-column-start: 2;
+  grid-column-end: 13;
 }
 
 header h1 {
   font-size: 5rem;
+}
+
+header h2 {
+  font-size: 3rem;
 }
 
 header p {
@@ -27,7 +33,9 @@ main {
 }
 
 nav {
+  margin-top: 25px;
   position: fixed;
+
   top: 0;
   display: flex;
   justify-content: center;
@@ -35,7 +43,24 @@ nav {
   width: 100%;
 }
 
-nav a {
+nav div {
+  height: 50px;
+  background-color: rgb(25, 26, 27);
+  display: flex;
+  width: 400px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav div a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  font-family: Montserrat;
+  color: gray;
+}
+
+nav div a:hover {
   color: white;
 }
 
@@ -83,6 +108,25 @@ nav a {
   }
 }
 
-/* main div {
-  background-color: rgb(18, 19, 22);
-} */
+.container-main {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#about {
+  padding-top: 15rem;
+  grid-column-start: 3;
+  grid-column-end: 13;
+  font-family: Montserrat;
+  margin-bottom: 1000px;
+}
+
+#about h1 {
+  font-size: 3.5rem;
+}
+
+#about p {
+  width: 50rem;
+  font-size: 2rem;
+}

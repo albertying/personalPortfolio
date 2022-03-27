@@ -46,8 +46,6 @@ const mars = new THREE.Mesh(geometry, material);
 mars.rotation.z = -1.5;
 mars.rotation.y = -0.5;
 
-mars.position.x = 7;
-mars.position.y = -7;
 mars.position.z = 5;
 
 scene.add(mars);
@@ -124,8 +122,8 @@ function moveMars() {
   const t = document.body.getBoundingClientRect().top;
   camera.position.y = t * 0.015;
 
-  mars.position.x = t * -0.004 + 7;
-  mars.position.y = t * 0.034 - 7;
+  mars.position.x = t * -0.0037 + 7;
+  mars.position.y = t * 0.0175 - 7;
 
   mars.rotation.y += 0.003;
   mars.rotation.y += 0.003;
