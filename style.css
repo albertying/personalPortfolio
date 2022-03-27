@@ -46,7 +46,7 @@ main {
 nav {
   margin-top: 25px;
   position: fixed;
-
+  z-index: 99;
   top: 0;
   display: flex;
   justify-content: center;
@@ -73,6 +73,12 @@ nav div a {
 
 nav div a:hover {
   color: white;
+}
+
+nav div a.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 
 .nav-links {
@@ -140,4 +146,12 @@ nav div a:hover {
 #about p {
   width: 50rem;
   font-size: 2rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+.fade-in.appear {
+  opacity: 1;
 }
