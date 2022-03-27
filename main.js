@@ -69,8 +69,8 @@ const material = new THREE.MeshStandardMaterial({
 
 const mars = new THREE.Mesh(geometry, material);
 
-mars.rotation.z = -1.5;
-mars.rotation.y = -0.5;
+mars.rotation.z = 2;
+mars.rotation.y = 2;
 
 mars.position.z = 5;
 

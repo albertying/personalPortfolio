@@ -1,8 +1,8 @@
 canvas {
+  background-color: rgb(18, 19, 20);
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgb(18, 19, 20);
 }
 
 @media screen and (max-width: 1536px) {
@@ -16,6 +16,7 @@ canvas {
     font-size: 9px;
   }
 }
+
 header {
   margin-top: 35rem;
   margin-bottom: 30rem;
@@ -25,11 +26,11 @@ header {
 }
 
 header h1 {
-  font-size: 5rem;
+  font-size: 7.5rem;
 }
 
 header h2 {
-  font-size: 3rem;
+  font-size: 4.5rem;
 }
 
 header p {
@@ -140,12 +141,15 @@ nav div a.is-visible {
 }
 
 #about h1 {
-  font-size: 3.5rem;
+  width: 35rem;
+  font-size: 2rem;
+  line-height: 3.5rem;
 }
 
 #about p {
-  width: 50rem;
-  font-size: 2rem;
+  width: 35rem;
+  font-size: 1.25rem;
+  line-height: 3rem;
 }
 
 .fade-in {
