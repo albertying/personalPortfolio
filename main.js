@@ -29,9 +29,9 @@ renderer.render(scene, camera);
 
 // Mars
 
-const marsTexture = new THREE.TextureLoader().load("./public/marstexture.png");
+const marsTexture = new THREE.TextureLoader().load("/marstexture.png");
 const marsNormalTexture = new THREE.TextureLoader().load(
-  "./public/5672_mars_4k_normal.jpg"
+  "/5672_mars_4k_normal.jpg"
 );
 
 const geometry = new THREE.SphereGeometry(9, 64, 32);
