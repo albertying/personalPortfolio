@@ -1,0 +1,88 @@
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(18, 19, 22);
+}
+
+header {
+  margin-left: 150px;
+  margin-top: 600px;
+  font-family: Montserrat;
+}
+
+header h1 {
+  font-size: 5rem;
+}
+
+header p {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+main {
+  position: absolute;
+  color: white;
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* main div {
+  background-color: rgb(18, 19, 22);
+} */
