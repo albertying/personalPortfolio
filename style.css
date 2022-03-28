@@ -133,23 +133,23 @@ nav div a.is-visible {
 }
 
 #about {
-  padding-top: 15rem;
   grid-column-start: 3;
-  grid-column-end: 13;
+  grid-column-end: 7;
+  padding-top: 15rem;
   font-family: Montserrat;
-  margin-bottom: 1000px;
 }
 
 #about h1 {
+  font-family: "roboto mono";
   width: 35rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 3.5rem;
 }
 
 #about p {
   width: 35rem;
   font-size: 1.25rem;
-  line-height: 3rem;
+  line-height: 2.25rem;
 }
 
 .fade-in {
@@ -158,4 +158,21 @@ nav div a.is-visible {
 }
 .fade-in.appear {
   opacity: 1;
+}
+
+.about-container {
+  grid-column-start: 3;
+  grid-column-end: 11;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-bottom: 100vh;
+}
+
+img {
+  margin-top: 15rem;
+  width: 33rem;
+  height: 33rem;
+  border-radius: 50px;
 }

@@ -6,7 +6,7 @@ const faders = document.querySelectorAll(".fade-in");
 
 const appearOptions = {
   threshold: 1,
-  rootMargin: "0px 0px -100px 0px",
+  rootMargin: "0px 0px -80px 0px",
 };
 
 const appearOnScroll = new IntersectionObserver(function (
@@ -31,6 +31,8 @@ faders.forEach((fader) => {
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
+
+//THREEJS
 
 const scene = new THREE.Scene();
 
