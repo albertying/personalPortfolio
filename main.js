@@ -6,7 +6,7 @@ const faders = document.querySelectorAll(".fade-in");
 
 const appearOptions = {
   threshold: 1,
-  rootMargin: "0px 0px -80px 0px",
+  rootMargin: "0px 0px -50px 0px",
 };
 
 const appearOnScroll = new IntersectionObserver(function (
@@ -172,8 +172,8 @@ function animate() {
   targetX = mouseX * 0.001;
   targetY = mouseY * 0.001;
   if (document.body.getBoundingClientRect().top === 0) {
-    camera.position.x += 0.005 * (targetX - camera.position.x);
-    camera.position.y += 0.005 * (targetY - camera.position.y);
+    camera.position.x += 0.007 * (targetX - camera.position.x);
+    camera.position.y += 0.007 * (targetY - camera.position.y);
   }
 
   mars.rotation.x += 0.0001;
