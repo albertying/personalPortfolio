@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 0px;
 }
 
 canvas {
@@ -172,7 +172,7 @@ nav div a.is-visible {
   align-items: center;
 }
 
-img {
+.face {
   margin-top: 15rem;
   width: 33rem;
   height: 33rem;
@@ -187,7 +187,6 @@ img {
   line-height: 3.5rem;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 100vh;
 }
 
 .resume h1 {
@@ -212,25 +211,21 @@ img {
   line-height: 2rem;
 }
 
-.container {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-}
-.interview-container {
-  height: 100%;
-  width: 100%;
-  scroll-snap-type: x mandatory;
-  overflow-x: scroll;
-  display: flex;
+.cover-letter {
+  margin-top: 15rem;
+  grid-column-start: 3;
+  grid-column-end: 11;
+  margin-bottom: 100vh;
 }
 
-.interview-container section {
-  display: flex;
-  flex: none;
-  scroll-snap-align: start;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
+.cover-letter h1 {
+  font-family: "roboto mono";
+  font-size: 2.5rem;
+  line-height: 5rem;
+}
+
+.cover-letter h3 {
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
 }
