@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 20px;
 }
 
 canvas {
@@ -63,7 +63,6 @@ nav div {
   height: 50px;
   background-color: rgb(25, 26, 27);
   display: flex;
-  width: 400px;
   border-radius: 50px;
   justify-content: center;
   align-items: center;
@@ -180,7 +179,7 @@ nav div a.is-visible {
 }
 
 .resume {
-  margin-top: 25rem;
+  margin-top: 7rem;
   padding-top: 15rem;
   grid-column-start: 3;
   grid-column-end: 11;
@@ -212,10 +211,9 @@ nav div a.is-visible {
 }
 
 .cover-letter {
-  margin-top: 15rem;
+  margin-top: 22rem;
   grid-column-start: 3;
   grid-column-end: 11;
-  margin-bottom: 100vh;
 }
 
 .cover-letter h1 {
@@ -228,4 +226,62 @@ nav div a.is-visible {
   font-family: Montserrat;
   font-size: 1.25rem;
   line-height: 2.25rem;
+}
+
+.interview-questions {
+  padding-top: 15rem;
+
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.interview-questions div {
+  width: 32rem;
+  height: 32rem;
+}
+.interview-questions h1 {
+  font-family: "roboto mono";
+  font-size: 2.5rem;
+  line-height: 5rem;
+}
+
+.interview-questions h3 {
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+}
+
+.interview-questions p {
+  font-family: Montserrat;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+.purple-underline {
+  display: inline;
+  box-shadow: inset 0 -0.26em rgb(200, 0, 242);
+}
+
+.yellow-underline {
+  display: inline;
+  box-shadow: inset 0 -0.26em rgb(252, 208, 84);
+}
+
+.cyan-underline {
+  display: inline;
+  box-shadow: inset 0 -0.26em rgb(33, 245, 247);
+}
+
+#contact {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  font-family: "roboto mono";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 5rem;
 }
